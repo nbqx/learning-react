@@ -14,5 +14,5 @@ or (development)
 $ gulp
 ```
 
-
+demo: [http://nbqx.github.io/learning-react/](http://nbqx.github.io/learning-react/)
 
