@@ -27,8 +27,8 @@ gulp.task('build',['browserify'],function(){
     .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('server',function(){
-  liveServer.start(8080,"public",false);
+gulp.task('server',['browserify'],function(){
+  return liveServer.start(8080,"public",false);
 });
 
 // gulp.task('default',['browserify']);

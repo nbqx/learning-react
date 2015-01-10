@@ -6,14 +6,22 @@ var React = require('react/addons'),
 var DnDMixin = {
   
   defaultInitialState: function(){
+    var content;
+    
+    if(this.props.content==null || this.props.content==undefined){
+      content = "";
+    }else{
+      content = this.props.content;
+    }
+    
     var defaults = {
       id: this.props.id,
-      content: this.props.content,
+      content: content.toString(),
       position: {
-        top: this.props.y,
-        left: this.props.x
+        top: ((this.props.y!==undefined)? this.props.y : 0),
+        left: ((this.props.x!==undefined)? this.props.x : 0)
       },
-      boxType: this.props.boxType
+      boxType: ((this.props.boxType!==undefined)? this.props.boxType : undefined)
     };
 
     return defaults

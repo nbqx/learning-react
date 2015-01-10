@@ -159,6 +159,8 @@ var App = React.createClass({
   render: function(){
     var data = []; // 表示用
 
+    // [todo] - schema check
+    
     if(this.state.searchKey!==''){
       var reg = new RegExp(this.state.searchKey,'i');
       data = this.state.data.filter(function(o){ return reg.test(o.content) });
