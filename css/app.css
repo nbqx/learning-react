@@ -1,0 +1,105 @@
+body {
+    background-color: #d00;
+}
+
+img {
+    max-width: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: #d0d;
+}
+
+a:hover{
+    color: #0dd;
+}
+
+#menu {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: #fff;
+    opacity: .8;
+    padding: 0.5em;
+    z-index: 200;
+    float: left;
+    /* height: 30px; */
+}
+
+#menu:hover {
+    opacity: 1;
+}
+
+#menu div {
+    display:inline;
+    margin-right: 1em;
+}
+
+#menu .search-box {
+    border: 1px solid #ccc;
+    padding: 0.3em;
+}
+
+.react-draggable {
+    position: absolute;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  -o-user-select: none;
+	  user-select: none;
+}
+
+.react-draggable, .cursor {
+		cursor: move;
+}
+
+.no-cursor {
+		cursor: auto;
+}
+
+.handle {
+    background: transparent;
+}
+
+/* .handle:hover { */
+/*     background: #000; */
+/* } */
+
+.box {
+		background: #fff;
+		border: 3px solid #000;
+		border-radius: 5px;
+    min-width: 300px;
+		float: left;
+}
+
+.box-content {
+    padding: 0 1.5em;
+}
+
+.box-content-form {
+    margin-top: 2em;
+    padding: 1.5em 1em 1em;
+    border-top: 1px dashed #ccc;
+}
+
+.box textarea {
+    color: #000;
+    white-space: nowrap;
+    overflow: auto;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 6em;
+}
+
+.box-ctrl {
+    padding: 0.5em;
+    float: right;
+}
+
+.error-box {
+    color: #f00;
+    background-color: #fff;
+}
+
