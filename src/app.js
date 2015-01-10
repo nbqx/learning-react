@@ -172,8 +172,9 @@ var App = React.createClass({
         <div id='memos-wrapper'>
           <div id='memos'>
           {data.map(function(dt){
-            return <Fusen key={dt.id}
-                          id={dt.id}
+            var id = dt.id || Date.now();
+            return <Fusen key={id}
+                          id={id}
                           x={dt.x}
                           y={dt.y}
                           boxType={dt.boxType}
